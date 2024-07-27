@@ -33,9 +33,9 @@ yum install vim https://dl.fedoraproject.org/pub/epel/epel-release-latest-9.noar
 sed -i -e '/TCPKeepAlive/ c TCPKeepAlive no' -e '/ClientAliveInterval/ c ClientAliveInterval 10' -e '/ClientAliveCountMax/ c ClientAliveCountMax 240'  /etc/ssh/sshd_config
 
 ## Profile Environment
-cp ps1.sh /etc/profile.d/ps1.sh
-cp env /etc/profile.d/boot-env.sh
-cp profile /etc/profile
+curl -s https://raw.githubusercontent.com/CodingManoj/tools/main/ps1.sh >  /etc/profile.d/ps1.sh
+curl -s https://raw.githubusercontent.com/CodingManoj/tools/main/env.sh > /etc/profile.d/boot-env.sh
+curl -s https://raw.githubusercontent.com/CodingManoj/tools/main/profile.sh >/etc/profile
 chmod +x /etc/profile /etc/profile.d/*
 
 useradd ec2-user
@@ -71,8 +71,8 @@ sed -i -e '4 i colorscheme desert' /etc/vimrc
 echo 'ec2-user ALL=(ALL) NOPASSWD:ALL' >/etc/sudoers.d/ec2-user
 chattr +i /etc/ssh/sshd_config /etc/ssh/sshd_config.d/50-cloud-init.conf /etc/sudoers.d/ec2-user
 
-cp ssh_config /etc/ssh/ssh_config.d/04-ssh-config.conf
-cp motd /etc/motd
+curl -s https://raw.githubusercontent.com/CodingManoj/tools/main/ssh_config > /etc/ssh/ssh_config.d/04-ssh-config.conf
+curl -s https://raw.githubusercontent.com/CodingManoj/tools/main/motd > /etc/motd
 
 ## Create directory for journalctl failure
 mkdir -p /var/log/journal
@@ -92,8 +92,8 @@ echo ':programname, isequal, "systemd-sysv-generator" /var/log/sysv.log
 & stop' >/etc/rsyslog.d/01-sysv.conf
 
 # Commands to /bin
-cp set-hostname.sh /bin/set-hostname
-cp mysql_secure_installation /usr/sbin/mysql_secure_installation
+curl -s https://raw.githubusercontent.com/CodingManoj/tools/main/set-hostname.sh > /bin/set-hostname
+curl -s https://raw.githubusercontent.com/CodingManoj/tools/main/mysql_secure_installation  > /usr/sbin/mysql_secure_installation
 chmod +x /bin/set-hostname /usr/sbin/mysql_secure_installation
 
 # Install AWS CLI
