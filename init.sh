@@ -3,7 +3,7 @@
 ## Following code can help in setting up AMI in AWS for practice of DevOps Tools 
 export PATH="/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin:/root/.local/bin:/root/bin"
 ## Common Functions 
-cp common-funs.sh /tmp/common.sh
+curl -s https://raw.githubusercontent.com/CodingManoj/tools/main/common-funs.sh > /tmp/common.sh
 source /tmp/common.sh
 case $ELV in 
     el7) EPEL=https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm ;;
