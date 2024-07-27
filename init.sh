@@ -60,8 +60,8 @@ echo "sed -i -e 's/^ec2-user:!!/ec2-user:/' /etc/shadow" >>/etc/rc.d/rc.local
 chmod +x /etc/rc.d/rc.local
 
 echo
-echo 'ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCuHVsHPaU+hcgeYkPdn3Ww6dIFRSEDT76NMctGhZgO1jy14OI+K74Z1sDYQ92TyV3+5rXJdXixrO60BE2QSK/h3TCARHYlkyjjoUbMNd3T6HBn4bH7dtOGfWAHQlr3sKn5vkzQyFCF3w+ZC0i3TvvLpjvPdvIwmrUa+VTx+Hq3wuzepGsr9DMJk8scktYg6AUmk2V0JLZjehGxU0dD4rv86CVgHnzT3VMrDxy22YdO+jjIn0qnVuSbMuntrAiHd5Q5Ru0OTz0DJMAcRVqgprmHmCtwEhncIVN95uIEPsXE89Q9/GmlsKszOBvmx42VRhzXKMCER57vj3xDRZaori90TTNkjbzpDkWK0s2JCsm0XSaaF0i6kMFCdEM37NDA/txe4pSodM47Fqq7kVeJXfYV9dmlmHDSCk1Kuruz5cyORcllISAe5BCG8wuoCtEsjPRB/E1x+aO87mUMEOqxfpP+f6TVYgUBh7aOJfAnXg8fRIMBM91D9KXGAE70X+rT++c= ec2-user@ip-172-31-47-186.ec2.internal' >/home/ec2-user/.ssh/authorized_keys
-echo 'ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCzCnlZC5ZsYsrrv9ys7hLAfPPtpWUK3eHFLbFiotwORE8/+jqHoxxTQd8qTEKeKtMVNqEJBuhCkH2PzrEOg6b9wrq28QhwpgeLJZn5VAATMU5ArKnzDxLZ1/NJt5qYZSotwOxHArCbf4Uib9MW/nhcENxownRK19Rva7gk/zcwBhyBqfIpWZRzrRAVVxOctwTEd7XnTgZ7AKYo3CZyvPRlpuRbZ8YCav1Ny+sNgQw+qQ4cmxjVpYhWbWGzmVIKlOUKXHgAOVyJpN/KNhOnhhxXtAnxvTLjdG9PQFc8oQFqfZVpN2st650wlJWlk9xDqlAj08/lcXkJ9g4sdIwIULhWpV0OiHfQZJh1izDpwD60/5cequoPt40F6VwM8cNpsTdeHof31aPCsJnX5AqhtHzwujpOAqjSb33Keyvn5hk+3Dsq2xzNgoOWw0fjbCXir6exVwy4cp0P0tJTQxufN2rgo3L+LF9m6kkAkLAGxlaWFMJuYSaE04iaHIQShyT7aUs= root@ip-172-31-47-186.ec2.internal' >>/root/.ssh/authorized_keys
+echo 'ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDC1WUdkMj2oGj6borVYrJSaZT+Nhx3EfGGoeHPWbTP7F0OLVdh5584QhFXz+WpXvT5S2uDsHT49lstZkYWAKVJVCgrPZzbBtRdiiXRpXNValsCZ73RZUyw6nSfo9L9gLcskVNOdTcHUyaOLlpImAMnp64X6NoxQVT0/4bX21wChQOqeoyyiZr3OD8+z7PrVHmQxTx2r4kIstnsUDsGJjD5tmewmeHd81V+cWugQ5Kmyf9ZgFIuCmLdl+3Qnf81WjMHaI0hKFgG23AyJ6P2sX4Lz2EBXFg2F7iWMDIKpMsd0h++1Q+fEzfcR6e5zcnSi8TRChq2D1JpEZCIaHWIxBNsmpO2z8VzAeSEDIG2MeiJURjUgnegeUUsvqU5ZaEEeh4U4W+IQ8EIb+/mfKk6oJN7s1iKX9E7rinpSApN5tHAeSfqKSbQHeSS5WEZiCBya/Hg8PknjGQ9D9NFDzSfs6OI1+ZwnTHtirnBxN8ufuYZvnWYhElYGQxnNmCyT+ts70c= ec2-user@ip-172-31-34-4.ec2.internal' >/home/ec2-user/.ssh/authorized_keys
+echo 'ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQC76ojbezkGrNNZxXY3Vao7udD/DXs2i8op2yXO/onMtZvV22CMqioeEvXOGd9K2ZbI0+1QZnzDnL1cmvgI+d3bzgM/0iOMZ7gTejfA9+DO6dGiDK+NezC8RYuuMmDolDuUfw73b4vF6bNqXQfSZTB+kxOPLoXcJtEWBaYwBOCYqw4yic+lUyB2iWdWHa1G1ev3ns/yFAd0UV1cY02vSj/VaC90Jm4LgGnFnCC06GB8CJICBbcrhorV9x3aZPADhNhRI/aldY5WXav/jRcoqBkFIzK7Jq3HwRcSmm99IJP0g+uh4KjUEyPfoL4khxclVwLR81dCL95tyXmur5LovfnPtuU0WlqotChmqub0LH+Ul82UsUcqTbhioiiSP5QxLZAA/nCfKohthO5CyDQYyxqJo7mNbOhRdU45HfTzJ5bLuq8Q37lHnhNtSaDo+DCdO/HKHcaZuUijMpkm0dU7BMEKkNw2wBXSssTOJH3arJM/YmYPr/9Q3GmX95annd5rvDs= root@ip-172-31-34-4.ec2.internal' >>/root/.ssh/authorized_keys
 chmod -R 700 /root/.ssh/id_rsa*
 chmod -R 700 /home/ec2-user/.ssh/id_rsa*
 
@@ -97,6 +97,7 @@ curl -s https://raw.githubusercontent.com/CodingManoj/tools/main/mysql_secure_in
 chmod +x /bin/set-hostname /usr/sbin/mysql_secure_installation
 
 # Install AWS CLI
+dnf install unzip -y 
 cd /tmp
 curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
 unzip awscliv2.zip &>/dev/null
