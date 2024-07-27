@@ -97,7 +97,6 @@ curl -s https://raw.githubusercontent.com/CodingManoj/tools/main/mysql_secure_in
 chmod +x /bin/set-hostname /usr/sbin/mysql_secure_installation
 
 # Install AWS CLI
-dnf install unzip -y 
 cd /tmp
 curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
 unzip awscliv2.zip &>/dev/null
