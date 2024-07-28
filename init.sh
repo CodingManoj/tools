@@ -35,7 +35,7 @@ sed -i -e '/TCPKeepAlive/ c TCPKeepAlive no' -e '/ClientAliveInterval/ c ClientA
 ## Profile Environment
 curl -s https://raw.githubusercontent.com/CodingManoj/tools/main/ps1.sh >  /etc/profile.d/ps1.sh
 curl -s https://raw.githubusercontent.com/CodingManoj/tools/main/env.sh > /etc/profile.d/boot-env.sh
-curl -s https://raw.githubusercontent.com/CodingManoj/tools/main/profile.sh >/etc/profile
+curl -s https://raw.githubusercontent.com/CodingManoj/tools/main/profile > /etc/profile
 chmod +x /etc/profile /etc/profile.d/*
 
 useradd ec2-user
