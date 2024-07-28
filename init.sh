@@ -111,3 +111,5 @@ sed -i -e '/aws-hostname/ d' -e '$ a r /tmp/aws-hostname' /usr/lib/tmpfiles.d/tm
 truncate -s 0 `find /var/log -type f |xargs`
 
 rm -rf /tmp/*
+
+echo "** Script Execution Completed **"
