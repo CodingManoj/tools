@@ -27,7 +27,7 @@ yum remove insights-client -y
 rm -f /etc/motd.d/insights-client
 
 ## Perform OS Update
-yum install vim https://dl.fedoraproject.org/pub/epel/epel-release-latest-9.noarch.rpm net-tools bind-utils sshpass jq nmap telnet -y
+yum install vim https://dl.fedoraproject.org/pub/epel/epel-release-latest-9.noarch.rpm net-tools git bind-utils sshpass jq nmap telnet -y
 
 ## Fixing SSH timeouts
 sed -i -e '/TCPKeepAlive/ c TCPKeepAlive no' -e '/ClientAliveInterval/ c ClientAliveInterval 10' -e '/ClientAliveCountMax/ c ClientAliveCountMax 240'  /etc/ssh/sshd_config
